@@ -1,0 +1,254 @@
+<html>
+<head>
+<title> HomePage</title>
+</head>
+<style type=text/css> 
+#mainContainer {
+  position: relative;
+  height: 250%;
+  width: 90%;
+}
+ .rightdiv 
+         { 
+        background-color: green;
+        border: 1px solid black;
+        top: 30px;
+        right: 0px;
+         height: 57%;
+        width: 30%;
+         float: right; 
+         } 
+ .rightinner{
+        display: inline-block;
+        height: 50%;
+        width: 100%;
+        margin: 0 auto;
+        background-color: black
+      }
+.leftdiv 
+         { 
+         border: 0px solid black;
+        top: 30px;
+        left: 0px;
+         height: 57%;
+        width: 12%;
+         float: left; 
+         } 
+
+#topContainer {
+  border: 0px solid black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 5%;
+  width: 100%;
+}
+#bottom { 
+                border: 0px solid black;
+                position:absolute;                  
+                bottom:0;                          
+                left:0;     
+                 height: 12%;
+                width: 112%;   
+                          
+            } 
+ .bottominner {
+        display: inline-block;
+        height: 27%;
+        width: 112%;
+        margin: 0 auto;
+        background-color: #1760ff;
+      }
+.button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #fc0303;
+  color: white;
+  border: 3px solid #008CBA;
+  margin:10px;
+  font-family:cursive;
+  font-size:15pt;
+  font-style:italic;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button2 {
+  background-color: #fc0303;
+  color: white;
+  border: 3px solid #008CBA;
+   margin:10px;
+   font-family:cursive;
+  font-size:15pt;
+  font-style:italic;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.mySlides {display:none;}
+ .center {
+  display: block;
+   margin-top: 20px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 210px;
+ width : 100%;
+  padding: 5px;
+}
+</style> 
+<body>
+<img src="logo.gif" height="200" width="180" align="left"> 
+<font style="font-family: times, serif; font-size:60pt; font-style:italic; color:blue; text-align:center"> Collins  </font>
+<font style="font-family: times, serif; font-size:60pt; font-style:italic; color:red ; text-align:center">- Happy Reader </font>
+<marquee scrolldelay=1 behavior="slide" width="700px"><font style="font-family: cursive; font-size:25pt; font-style:italic; color:black ; text-align:center">All Great Leaders are Good Readers</font></marquee>
+<br><br><br><br>
+<div id="mainContainer">
+    <div id="topContainer">
+    <a href="signup.html"><button class="button button2">Register with Us</button></a>
+    <a href="publish.html"><button class="button button1">Publish Article</button></a>
+   <a href="happyreading.html">   <button class="button button2">Happy Reading</button></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="comingsoon.html"><img src="coming1.gif" height="60" width="150" align="right"> </a>
+<a href="buynow.html"><img src="coming.gif" height="60" width="150" align="right"> </a>
+</div>
+<br><br><br><br><br>
+<div class="leftdiv"> 
+<a href="login1.html"><img src="teacher.jpg" height="120" width="120" align="left"> </a>
+<br><br>
+<a href="login1.html"><font style="font-family: cursive; font-size:16pt; font-style:italic; color:blue; text-align:center"> For Teachers  </font></a>
+<br><br><br><br><br>
+<a href="login1.html"><img src="student1.jpg" height="120" width="120" align="left"> </a>
+<br><br><br>
+<a href="login1.html"><font style="font-family: cursive; font-size:16pt; font-style:italic; color:blue; text-align:center"> For Students  </font></a>
+<br><br><br><br><br>
+<a href="login1.html"><img src="parent.jpg" height="120" width="120" align="left"> </a>
+<br><br><br><br><br>
+<a href="login1.html"><font style="font-family: cursive; font-size:16pt; font-style:italic; color:blue; text-align:center"> For Parents </font></a>
+</div>
+<div class="center">
+  <img  class="mySlides" src="book1.jpg" height="700" width="600" align="left" >
+  <img class="mySlides" src="book2.jpg" height="700" width="600" align="left" >
+  <img  class="mySlides" src="book3.jpg" height="700" width="600" align="left" >
+<img  class="mySlides" src="book4.jpg" height="700" width="600" align="left" >
+<img  class="mySlides" src="book5.jpg" height="700" width="600" align="left" >
+<img  class="mySlides" src="book6.jpg" height="700" width="600" align="left" >
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <video 
+     src="video1.mp4"
+     preload="auto"
+     width="500"             
+     heigth="300"
+     align="right"             
+     controls
+     loop>
+  <source src="video1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font style="font-family: cursive; font-size:26pt; font-style:italic; color:red; ">Recent Announcements</font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<marquee scrolldelay=5 direction="up"  height="300px" width="500px">
+<a href="bookfair.pdf" download="hello">
+<font style="font-family: cursive; font-size:20pt; font-style:italic; color:blue; ">Book Fair at remote places(Sikkim & Manipur)</font></a>
+<font style="font-family: cursive; font-size:20pt; font-style:italic; color:white; ">Book Fair at remote places</font>
+<br>
+<font style="font-family: cursive; font-size:20pt; font-style:italic; color:blue; ">#Webinar featuring: Sudha Murty</font>
+<br>
+
+<font style="font-family: cursive; font-size:20pt; font-style:italic; color:white; ">Book Fair at remote placesplaces</font> 
+<font style="font-family: cursive; font-size:20pt; font-style:italic; color:blue; ">Mission Millions Book (Book donation Camp)</font>
+<br>
+<font style="font-family: cursive; font-size:20pt; font-style:italic; color:white; ">Book Fair at remote place</font>
+<br>
+<font style="font-family: cursive; font-size:20pt; font-style:italic; color:blue; ">Reading Awareness Program: An Evolving Success</font>
+</marquee>
+</div>
+<!--<div class="rightdiv"> 
+<div class="rightinner">
+</div> 
+</div>-->
+<div id="bottom">
+  <hr size="30" noshade> 
+<a href="contactus.html"> <font style="font-family: times, serif; font-size:20pt; font-style:italic; color:blue ; text-align:center">Contact Us</font> </a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="aboutus.html"> <font style="font-family: times, serif; font-size:20pt; font-style:italic; color:blue ; text-align:center">About Us</font> </a>
+<img src="copy1.png" height="100" width="100" align="right" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="logo.gif" height="100" width="110" align="right"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="copy.png" height="100" width="150"  align="right">
+</div>
+<div class="bottominner">
+<font style="font-family: times, serif; font-size:30pt; font-style:italic; color:white ; text-align:center">Know About Our Authors</font>
+<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="sudha.html"><img  src="A1.jpg" height="150" width="150"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="munshi.html"><img  src="A2.jpg" height="150" width="150"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="chetan.html"><img  src="A3.jpg" height="150" width="150"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="harivansh.html"><img  src="A4.jpg" height="150" width="150"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="gulzar.html"><img  src="A5.jpg" height="150" width="150"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="chitra.html"><img  src="A6.jpg" height="150" width="150"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="swami.html"><img  src="A7.jpg" height="150" width="150"></a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="sudha.html"><font style="font-family: times, serif; font-size:15pt; font-style:italic; color:white ;"> Sudha Murthy </font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="munshi.html"><font style="font-family: times, serif; font-size:15pt; font-style:italic; color:white ;"> Munshi Premchand </font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="chetan.html"><font style="font-family: times, serif; font-size:15pt; font-style:italic; color:white ;"> Chetan Bhagat</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="harivansh.html"><font style="font-family: times, serif; font-size:15pt; font-style:italic; color:white ;"> Harivansh Rai Bachchan</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="gulzar.html"> <font style="font-family: times, serif; font-size:15pt; font-style:italic; color:white ;"> Gulzar</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="chitra.html"><font style="font-family: times, serif; font-size:15pt; font-style:italic; color:white ;"> Chitra Banerjee</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="swami.html"><font style="font-family: times, serif; font-size:15pt; font-style:italic; color:white ;"> Swami Vivekanand</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</div>
+  </div>
+
+</body>
+</html>

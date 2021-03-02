@@ -1,0 +1,110 @@
+<html>
+<head>
+<title> Publish Article</title>
+</head>
+<style>
+  input[type=text],
+    input[type=password],
+ input[type=textarea] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+     
+ label {
+        color: blue;
+        font-family: cursive;
+        font-size:15pt;
+}
+    button {
+        background-color: blue;
+        color: white;
+        padding: 10px 10px;
+       margin-right: 50px;
+       margin-left: 200px;
+        cursor: pointer;
+        width: 20%;
+        align:center;
+    }
+     
+    .cancelbtn {
+        padding: 10px 10px;
+        background-color: red;
+    }
+     
+    .cancelbtn,
+    .signupbtn {
+        float: left;
+        width: 20%;
+    }
+    .container {
+        padding: 16px;
+    }
+  
+     
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    }
+</style>
+ 
+<body>
+<center><img src="logo.gif" height="200" width="150"> </center>
+ <center>   
+<font style="font-family: times, serif; font-size:40pt; font-style:italic,bold; color:blue; text-align:center">Publish your Article with Collins</font>
+<br> </center>
+    <form action="publishok.html" method="post" id="publish"style="border:1px solid #ccc">
+        <div class="container">
+             <label><b>Article Title : </b></label>
+            <input type="text" placeholder="Enter Title" name="title" id="name" required>
+<br>
+<br>
+<label><b>Language of Article</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+<select id="lang" name="lang">
+ <option value="0">Select Language</option>
+  <option value="04">English</option>
+  <option value="04">Hindi</option>
+  <option value="04">Sanskrit</option>
+
+</select>
+<br>
+<br>
+<label> <b>  
+Do you need a copy for Proof Reading </b>
+</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="male"/> Yes 
+<input type="radio" name="female"/> No
+<br>  
+<br>
+            <label><b>Email:</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+ <br>
+<br>
+
+            <label><b>Name of Article Writer : </b></label>
+            <input type="text" placeholder="Enter Name" name="name1" id="name" required>
+<br>
+<br>
+<label ><b>Write your Article here (Total Characters Limit:5000): </b></label>
+<br>
+<textarea id="t1" name="t1" rows="20" cols="150" placeholder="Type Here" overflow="scroll">
+</textarea>
+
+<br>
+<br>
+            <div class="clearfix">
+                <button type="reset" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Publish</button> 
+            </div>
+        </div>
+    </form>
+</body>
+ 
+</html>

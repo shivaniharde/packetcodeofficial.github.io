@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Art & Entertainment</title>
+</head>
+<style type=text/css> 
+.mySlides {display:none;}
+ .center {
+  display: block;
+   margin-top: 20px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 210px;
+ width : 100%;
+  padding: 5px;
+}
+</style> 
+<body bgcolor="#e9fc6d">
+<img src="logo.gif" height="200" width="180" align="left"> 
+<br><br>
+<center><font style="font-family: cusive; font-size:60pt; font-style:italic; color:red ; text-align:center">Arts & Entertainment </font></center>
+
+<br>
+<center>
+  <img  class="mySlides" src="ARTS & ENTERTAINMENT\AM11.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM22.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM33.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM44.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM55.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM66.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM77.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM88.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM99.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM1010.jpg" height="700" width="600" >
+<img  class="mySlides" src="ARTS & ENTERTAINMENT\AM1111.jpg" height="700" width="600" >
+</center>
+ 
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

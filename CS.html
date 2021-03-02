@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> CRIME & MYSTERY</title>
+</head>
+<style type=text/css> 
+.mySlides {display:none;}
+ .center {
+  display: block;
+   margin-top: 20px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 210px;
+ width : 100%;
+  padding: 5px;
+}
+</style> 
+<body bgcolor="#e9fc6d">
+<img src="logo.gif" height="200" width="180" align="left"> 
+<br><br>
+<center><font style="font-family: cusive; font-size:60pt; font-style:italic; color:red ; text-align:center">CRIME & MYSTERY</font></center>
+
+<br>
+<center>
+  <img  class="mySlides" src="CRIME & MYSTERY\CS11.jpg" height="700" width="600" >
+<img  class="mySlides" src="CRIME & MYSTERY\CS22.jpg" height="700" width="600" >
+<img  class="mySlides" src="CRIME & MYSTERY\CS33.jpg" height="700" width="600" >
+<img  class="mySlides" src="CRIME & MYSTERY\CS44.jpg" height="700" width="600" >
+<img  class="mySlides" src="CRIME & MYSTERY\CS55.jpg" height="700" width="600" >
+<img  class="mySlides" src="CRIME & MYSTERY\CS66.jpg" height="700" width="600" >
+<img  class="mySlides" src="CRIME & MYSTERY\CS77.jpg" height="700" width="600" >
+<img  class="mySlides" src="CRIME & MYSTERY\CS88.jpg" height="700" width="600" >
+<img  class="mySlides" src="CRIME & MYSTERY\CS99.jpg" height="700" width="600" >
+<img  class="mySlides" src="CRIME & MYSTERY\CS100.jpg" height="700" width="600" >
+
+</center>
+ 
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

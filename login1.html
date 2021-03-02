@@ -1,0 +1,87 @@
+<html>
+<head>
+<title> Login </title>
+</head>
+<style>
+  input[type=text],
+    input[type=password]  {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+     
+ label {
+        color: blue;
+        font-family: cursive;
+        font-size:15pt;
+}
+    button {
+        background-color: blue;
+        color: white;
+        padding: 10px 10px;
+       margin-right: 50px;
+       margin-left: 200px;
+        cursor: pointer;
+        width: 20%;
+        align:center;
+    }
+     
+    .cancelbtn {
+        padding: 10px 10px;
+        background-color: red;
+    }
+     
+    .cancelbtn,
+    .signupbtn {
+        float: left;
+        width: 20%;
+    }
+    .container {
+        padding: 16px;
+    }
+  
+     
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    }
+</style>
+ 
+<body>
+<center><img src="logo.gif" height="200" width="150"> </center>
+ <center>   
+<font style="font-family: times, serif; font-size:40pt; font-style:italic,bold; color:blue; text-align:center">Login</font>
+<br></center>
+    <form action="happyreading.html" method="post" id="signup"style="border:1px solid #ccc">
+        <div class="container">
+             <label><b>UserName</b></label>
+            <input type="text" placeholder="Enter Name" name="name1" id="name" required>
+<br>
+<br>
+   <label><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="passw" required>
+ <br>
+<br>
+
+<label for="who"><b>You are a : </b> </label>
+<select id="who" name="who">
+  <option value="demo">Select Here</option>
+  <option value="Teacher">Teacher</option>
+</select>
+<br>
+<br>
+            <div class="clearfix">
+                <button type="reset" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Login</button> 
+            </div>
+        </div>
+    </form>
+</body>
+ 
+</html>
